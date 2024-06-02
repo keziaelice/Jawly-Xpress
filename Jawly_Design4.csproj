@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFA09005-ADD0-4AF7-84C7-8BA040AA8BF7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jawly_Design4</RootNamespace>
+    <AssemblyName>Jawly_Design4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="First_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="First_Form.Designer.cs">
+      <DependentUpon>First_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditAccount.Designer.cs">
+      <DependentUpon>Form_EditAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditAddress.Designer.cs">
+      <DependentUpon>Form_EditAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EstimatedCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EstimatedCost.Designer.cs">
+      <DependentUpon>Form_EstimatedCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_History.Designer.cs">
+      <DependentUpon>Form_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HistoryDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HistoryDetails.Designer.cs">
+      <DependentUpon>Form_HistoryDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MainPage.Designer.cs">
+      <DependentUpon>Form_MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_OrderShipping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_OrderShipping.Designer.cs">
+      <DependentUpon>Form_OrderShipping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ResiTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ResiTransaksi.Designer.cs">
+      <DependentUpon>Form_ResiTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SavedAddresses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SavedAddresses.Designer.cs">
+      <DependentUpon>Form_SavedAddresses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SavedAddress_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SavedAddress_Main.Designer.cs">
+      <DependentUpon>Form_SavedAddress_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ShippingRates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ShippingRates.Designer.cs">
+      <DependentUpon>Form_ShippingRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Tracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Tracking.Designer.cs">
+      <DependentUpon>Form_Tracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Vouchers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Vouchers.Designer.cs">
+      <DependentUpon>Form_Vouchers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History_Page.Designer.cs">
+      <DependentUpon>History_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Page.Designer.cs">
+      <DependentUpon>Login_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp_Page.Designer.cs">
+      <DependentUpon>SignUp_Page.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="First_Form.resx">
+      <DependentUpon>First_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditAccount.resx">
+      <DependentUpon>Form_EditAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditAddress.resx">
+      <DependentUpon>Form_EditAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EstimatedCost.resx">
+      <DependentUpon>Form_EstimatedCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_History.resx">
+      <DependentUpon>Form_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_HistoryDetails.resx">
+      <DependentUpon>Form_HistoryDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MainPage.resx">
+      <DependentUpon>Form_MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_OrderShipping.resx">
+      <DependentUpon>Form_OrderShipping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ResiTransaksi.resx">
+      <DependentUpon>Form_ResiTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SavedAddresses.resx">
+      <DependentUpon>Form_SavedAddresses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SavedAddress_Main.resx">
+      <DependentUpon>Form_SavedAddress_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ShippingRates.resx">
+      <DependentUpon>Form_ShippingRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Tracking.resx">
+      <DependentUpon>Form_Tracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Vouchers.resx">
+      <DependentUpon>Form_Vouchers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History_Page.resx">
+      <DependentUpon>History_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Page.resx">
+      <DependentUpon>Login_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SignUp_Page.resx">
+      <DependentUpon>SignUp_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\jawly_logo_full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\button_ordershipping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\button_shippingrates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\button_tracking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\button_history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\button_voucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jawly_logo_full.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\randomblob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\randomblob %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Order Shipping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Shipping Rates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Tracking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\History.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Voucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blob_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jawly_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blob_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ordershipping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_shippingrates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_tracking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\button_tracking1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\icon_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saddress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\625, 500 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\625, 500 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\625, 500 %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V014.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V019.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\625, 500 %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\625, 500 %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\from icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\to icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\625, 500 %2811%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
