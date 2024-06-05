@@ -5,6 +5,7 @@ Back then, many people experienced delivering goods problems, such as wrong addr
 Notes: 
 1. Before running the application, don't forget to import the database from the Jawly_Database.sql file.
 2. In the Form.cs window, modify the SQL server, uid, pwd, and database to your configuration, as shown in the following screenshot.
+   
    <img width="582" alt="image" src="https://github.com/keziaelice/Jawly-Xpress/assets/127367044/884742af-cb43-4c9a-91fd-9843fe8bfb21">
 
 3. Run the application and use the stored account (_username: tokobahagia_, _password: apaajalah5_). 
